@@ -4,9 +4,11 @@ Easily encrypt and decrypt files / folders in Linux !
 
 ### :warning: Disclaimer :warning:
 
-This is not a serious project. See this as a cloud backup of two bash files.
+This is not a serious project. See this as a cloud backup of two shell files.
 
 ## Requirements
+
+*These should be included in most Linux distros.*
 
  - [gpg](https://gnupg.org/) :lock:
  - [tar](https://www.gnu.org/software/tar/) :file_folder:
