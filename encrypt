@@ -1,0 +1,6 @@
+#!/bin/bash
+normpath=$(python -c "from os.path import normpath;import sys;print(normpath(sys.argv[1]))" $1) &&
+tar -cf $normpath.tar $1 &&
+gpg -o $normpath.enc --symmetric $normpath.tar &&
+rm -rf $normpath $normpath.tar &&
+mv $normpath.enc $normpath
